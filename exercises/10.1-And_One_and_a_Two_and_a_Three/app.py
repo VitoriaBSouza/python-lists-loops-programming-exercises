@@ -6,3 +6,5 @@ contact = {
 
 # Your code here
 
+for i in contact.keys():
+    print(f"{i}: {contact[i]}")

@@ -11,4 +11,10 @@ tasks = [
 
 
 # Your code here
+def filter_task(task):
+    return task["done"]
+
+new_list = list(filter(filter_task, tasks))
+
+print(new_list)
 

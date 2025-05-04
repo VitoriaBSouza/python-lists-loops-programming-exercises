@@ -15,7 +15,9 @@ def calculate_age(date_of_birth):
 
 def format_greeting(person):
     # Your code here
-    return person["name"]
+    age = calculate_age(person["birth_date"])
+    aux = person["name"]
+    return (f"Hello, my name is {aux} and I am {age} years old")
 
 
 name_list = list(map(format_greeting, people))
